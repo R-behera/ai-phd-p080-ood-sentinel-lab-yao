@@ -1,0 +1,13 @@
+{
+  "professor": "Huaxiu Yao",
+  "university": "UNC Chapel Hill",
+  "program": "Computer Science PhD",
+  "research_area": "Machine learning, foundation models, multimodal/trustworthy AI",
+  "representative_paper": "Improving Out-of-Distribution Robustness via Selective Augmentation (LISA); 2022; ICML",
+  "paper_link": "https://scholar.google.com/scholar?q=Improving+Out-of-Distribution+Robustness+via+Selective+Augmentation+%28LISA%29",
+  "project_family": "trustworthy",
+  "focus": "foundation models",
+  "value_add_artifact": "adaptive red-team and repair regression harness",
+  "next_step": "Replace seed cases with task-specific failures and verify repairs do not regress safe cases.",
+  "generated_for": "professor outreach value-add starter"
+}
