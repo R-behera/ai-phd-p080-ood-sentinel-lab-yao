@@ -12,6 +12,46 @@
   "next_step": "Replace seed cases with task-specific failures and verify repairs do not regress safe cases.",
   "professor": "Huaxiu Yao",
   "project_family": "trustworthy",
+  "proposed_method": {
+    "algorithm_id": "P080-Yao-FoundationModels",
+    "algorithm_name": "YaoMinimalFoundationModelsTraceEngine",
+    "core_mechanism": "prioritizes severe open violations and repair regressions for red-team follow-up",
+    "decision_rule": "Rank seed cases by trustworthy-specific priority score with Yao-aligned focus term 'foundation models'.",
+    "mean_priority_score": 0.28,
+    "project_family": "trustworthy",
+    "top_cases": [
+      {
+        "action": "open red-team repair task",
+        "case_id": "T4",
+        "priority_score": 0.82,
+        "signals": {
+          "severity": 1.0,
+          "unrepaired": true,
+          "violation": true
+        }
+      },
+      {
+        "action": "monitor as regression control",
+        "case_id": "T2",
+        "priority_score": 0.3,
+        "signals": {
+          "severity": 0.6,
+          "unrepaired": false,
+          "violation": true
+        }
+      },
+      {
+        "action": "monitor as regression control",
+        "case_id": "T1",
+        "priority_score": 0.0,
+        "signals": {
+          "severity": 0.4,
+          "unrepaired": false,
+          "violation": false
+        }
+      }
+    ]
+  },
   "research_area": "Machine learning, foundation models, multimodal/trustworthy AI",
   "university": "UNC Chapel Hill",
   "value_add": "adaptive red-team and repair regression harness"
